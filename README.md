@@ -19,7 +19,7 @@ gem install rails --version="5.0.7.2"
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :comments
 - has_many :groups,  through:  :groups_users
@@ -27,8 +27,7 @@ gem install rails --version="5.0.7.2"
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image|text||
-|text|text||
+|name|string|null: false|
 ### Association
 - has_many :comments
 - has_many  :users,  through:  :groups_users
@@ -37,7 +36,10 @@ gem install rails --version="5.0.7.2"
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
+|image|text||
+|group_id|string|null: false|
+|user_id|string|null: false|
 ### Association
 - belongs_to :group
 - belongs_to :user
