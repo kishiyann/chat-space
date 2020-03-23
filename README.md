@@ -15,6 +15,11 @@ gem install rails --version="5.0.7.2"
 * Database creation
 
 ## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string|null: false|
 ### Association
 - has_many :groups
 - has_many :comments
