@@ -1,0 +1,25 @@
+.main-chat
+  .main-header
+    .main-header__logo
+      %p.main-header__logo__group test
+      .main-header__logo__username 
+        %p Member: :masa
+    %a(href="#")
+      .main-header__edit-btn Edit
+  .main-content
+    .main-content__text
+      %p.main-content__text__user-name masa
+      %p.main-content__text__data 2019/11/20(Wed) 17:43:01
+    %p.main-content__massage おはよう！
+    .main-content__text
+      %p.main-content__text__user-name uru
+      %p.main-content__text__data 2019/11/20(Wed) 18:43:01
+    %p.main-content__massage おはよう！
+  .form
+    %form.new_massage
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a massage"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image' )
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit",class: "submit-btn"}
