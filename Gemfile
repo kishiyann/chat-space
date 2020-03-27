@@ -48,6 +48,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

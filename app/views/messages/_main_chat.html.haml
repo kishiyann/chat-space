@@ -4,6 +4,7 @@
       .main-header__logo__group
         = @group.name
       .main-header__logo__username 
+        Member :
         -@group.users.each do |user|
           #{user.name}
     = link_to edit_group_path(@group.id) do
