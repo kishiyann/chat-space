@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-
+server '52.198.92.215', user: 'ec2-user', roles: %w{app db web}
 
 # role-based syntax
 # ==================
@@ -49,9 +49,9 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server '52.198.92.215',
-#   user: 'ec2-user',
-#   roles: %w{app db web},
+# server "example.com",
+#   user: "user_name",
+#   roles: %w{web app},
 #   ssh_options: {
 #     user: "user_name", # overrides user setting above
 #     keys: %w(/home/user_name/.ssh/id_rsa),
